@@ -1,0 +1,44 @@
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .board {
+    display: inline-block;
+    border: 1px solid #000;
+    background-color: brown;
+    background-image: url('farm.png');
+    background-size: cover;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .cell {
+    width: 20px;
+  height: 20px;
+  
+  }
+  
+  .player {
+    background-color: red;
+    width: 40px; /* Yeni genişlik */
+    height: 40px; /* Yeni yükseklik */
+    background-image: url('rabbit.png');
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center;
+  }
+  
+  
+  .carrot {
+    background-color: orange;
+  }
+  
+  .score {
+    margin-top: 20px;
+  }
+  

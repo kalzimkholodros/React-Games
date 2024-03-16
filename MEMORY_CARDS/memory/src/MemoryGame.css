@@ -1,0 +1,161 @@
+/* MemoryGame.css */
+
+.memory-game {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 120px; /* Kartların genişliğini ayarlayın */
+    height: 120px; /* Kartların yüksekliğini ayarlayın */
+    margin: 10px;
+    perspective: 1000px;
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .card.flipped .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .card-front {
+    background-color: #3f51b5;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-back {
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+  }
+  
+  .card-back img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  h1{
+    color: #e0e0e0;
+    font-family: fantasy ;
+    font-size: 40px;
+    
+  }
+  .gold-counter {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .gold-counter:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  }
+  
+  .gold-image img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
+  
+  .gold-amount {
+    font-size: 18px;
+  }
+  /* MemoryGame.css */
+
+.market {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  
+  .market-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .gold {
+    display: flex;
+    align-items: center;
+  }
+  
+  .gold img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
+  
+  .gold span {
+    font-weight: bold;
+  }
+  
+  .market-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .market-item {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  /* MemoryGame.css */
+
+.close-button {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .close-button:hover {
+    background-color: #d32f2f;
+  }
+  

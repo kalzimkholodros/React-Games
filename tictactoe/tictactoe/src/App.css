@@ -1,0 +1,112 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  background-image: url('./imgs/dice.gif');
+  background-size: cover;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.game-info {
+  margin-top: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+  grid-gap: 5px;
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  font-size: 36px;
+  font-weight: bold;
+  background-color: #fff;
+  border: 2px solid #000;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.square:hover {
+  background-color: #f0f0f0;
+}
+
+.square:active {
+  transform: scale(1.5);
+  
+}
+/* App.css */
+
+.gold-icon {
+  width: 24px; /* Örnek olarak 24 piksel genişliği kullanabiliriz */
+  height: 24px; /* ve 24 piksel yüksekliği */
+}
+
+
+
+.market {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 2px solid black;
+  padding: 20px;
+}
+
+.market-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.gold {
+  display: flex;
+  align-items: center;
+}
+
+.gold img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.close-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.market-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.market-item {
+  margin-bottom: 5px;
+}
+

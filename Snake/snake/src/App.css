@@ -1,0 +1,84 @@
+.snake-game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.snake-game-board {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%; /* veya istediğiniz genişlik */
+  height: 80%; /* veya istediğiniz yükseklik */
+  border: 10px solid #333;
+  background-image: url('./forest.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px; /* kenar yumuşatma */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden; /* taşan içeriği kes */
+  
+}
+
+
+.snake-cell
+ {
+  position: absolute;
+  width: 40px; /* hücre boyutu */
+  height: 40px; /* hücre boyutu */
+  border-radius: 50%; /* yuvarlak hücreler */
+  transition: transform 0.1s ease-in-out; /* yumuşak hareket geçişi */
+}
+.food-cell
+{
+  position: absolute;
+  width: 30px; /* hücre boyutu */
+  height: 30px; /* hücre boyutu */
+  border-radius: 50%; /* yuvarlak hücreler */
+  transition: transform 0.1s ease-in-out; /* yumuşak hareket geçişi */
+  background-image: url('./kuş.png');
+  background-size: cover;
+  background-position: center;
+}
+.snake-cell {
+  background-image: url('./yılan.png'); /* yılan rengi */
+  border: 2px solid #002aff; /* yılan kenarlığı */
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.5); /* yılan gölgesi */
+}
+
+.food-cell {
+  background-color: #FF6347; /* yiyecek rengi */
+  box-shadow: 0 0 10px rgba(255, 99, 71, 0.5); /* yiyecek gölgesi */
+}
+
+.score {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #00ffff; /* skor rengi */
+}
+
+.game-over-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  color: #FF6347; /* game over mesajı rengi */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+body{
+  background-image: url('./gsnake.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+h1{
+  color: aliceblue;
+}
